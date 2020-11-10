@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular10-lecture2-task5';
+  color = {'red': '#FF0000', 'orange': '#FF8000','yellow': '#FFFF00', 'green': '#00FF00',
+          'blue': '#00FFFF', 'indigo': '#0000FF', 'purple': '#FF00FF'}
+
+  visible = 'visible'
+
+  onClick() {
+    if (this.visible == 'visible') {
+      this.visible = 'collapse'
+    } else {
+      this.visible = 'visible'
+    }
+  }
 }
